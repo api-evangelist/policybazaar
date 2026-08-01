@@ -1,8 +1,26 @@
 aid: policybazaar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/policybazaar.png
 name: Policybazaar
-description: 'Policybazaar is a company surfaced as a portfolio company of softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Policybazaar is India''s largest online insurance aggregator and digital
+  marketplace, operated by PB Fintech Ltd. It lets consumers compare, buy and manage
+  insurance across health, term life, motor, travel, investment and corporate lines
+  from a wide panel of insurers, providing quotes, policy issuance, renewals, claims
+  assistance and advisory. Surfaced as a portfolio company of SoftBank Vision Fund
+  and added to the API Evangelist network. As of this enrichment pass Policybazaar
+  publishes a consumer-facing web and mobile marketplace but no public developer
+  portal, API documentation, or machine-readable API surface (no developer/API
+  subdomain, no /.well-known documents, no llms.txt).'
 url: https://raw.githubusercontent.com/api-evangelist/policybazaar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +30,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Insurance
+- InsurTech
+- Marketplace
+- India
+- Insurance Aggregator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/policybazaar-domain-security.yml
+- type: Website
+  url: https://www.policybazaar.com/
+- type: TermsOfService
+  url: https://www.policybazaar.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.policybazaar.com/privacy-policy/
+- type: Support
+  url: https://www.policybazaar.com/contact-us/
+- type: About
+  url: https://www.policybazaar.com/about-us/
+- type: Blog
+  url: https://www.policybazaar.com/pblife/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
